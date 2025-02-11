@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix BackEnd && npm install --prefix FrontEnd && cd FrontEnd && npm run build"
+    "build": "npm install --prefix BackEnd && npm install --prefix FrontEnd && cd FrontEnd && npm run build",
+    "start": "npm run start --prefix BackEnd"
   },
   "keywords": [],
   "author": "",
