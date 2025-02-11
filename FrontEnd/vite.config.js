@@ -9,7 +9,9 @@ export default defineConfig({
   ],
 
   build: {
-    outDir: "dist"
+    outDir: "dist",
+    chunkSizeWarningLimit: 1000, // Increase the chunk size limit to avoid warnings
   }
+
 
 })
