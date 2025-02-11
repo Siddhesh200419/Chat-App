@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build":"npm install --prefix BackEnd && npm install --prefix FrontEnd && npm run build --prefix FrontEnd",
-    "start":"npm run start --prefix BackEnd"
+    "build": "vite build && npm install --prefix BackEnd && npm install --prefix FrontEnd && npm run build --prefix FrontEnd",
+    "start": "npm run start --prefix BackEnd"
   },
   "keywords": [],
   "author": "",
