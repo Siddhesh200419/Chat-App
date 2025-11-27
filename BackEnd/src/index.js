@@ -4,7 +4,7 @@ import { connectDB } from "./lib/db.js";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
-import { app,server } from "./lib/socket.js";
+import { app, server, allowedOrigins } from "./lib/socket.js";
 import cors from "cors";
 import path from "path"
 dotenv.config();
@@ -13,7 +13,7 @@ const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
 app.use(cors({
-    origin:"http://localhost:5001",
+    origin: allowedOrigins,
     credentials: true
 }));
 
