@@ -9,9 +9,9 @@ const normalizeOrigins = () => {
     : [];
 
   const defaults = [
-    "http://localhost:5173",
-    "http://localhost:5174",
-    "http://localhost:3000",
+    "https://chatty-frontend-i6cv.onrender.com/",
+    // "http://localhost:5174",
+    // "http://localhost:3000",
   ];
 
   return [...envOrigins, ...defaults]
